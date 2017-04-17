@@ -78,13 +78,25 @@
       </div>
 
       <!-- Repository containing source -->
+      {% if config.repo_url %}
       <div class="md-flex__cell md-flex__cell--shrink">
         <div class="md-header-nav__source">
-          {% if config.repo_url %}
             {% include "partials/source.html" %}
-          {% endif %}
         </div>
       </div>
+      {% endif %}
+
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          <a href="https://support.outlyer.com/hc/en-gb/requests/new">
+            New Ticket
+          </a> |
+          <a href="https://support.outlyer.com/hc/en-gb/requests">
+            My Tickets
+          </a>
+        </span>
+      </div>
+
     </div>
   </nav>
 </header>
